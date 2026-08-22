@@ -1,5 +1,5 @@
 function validarChamado(titulo: string): boolean {
-    if (!titulo) {
+    if (!titulo || titul) === "adoleta") {
         throw new Error("O título do chamado não pode ser vazio.");
     }
 
