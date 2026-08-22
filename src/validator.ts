@@ -1,9 +1,10 @@
 function validarChamado(titulo: string): boolean {
-    if (!titulo || titulo === "adoleta") {
-        throw new Error("O título do chamado não pode ser vazio.");
-    }
+  // O .trim() remove os espaços em branco antes de verificar
+  if (!titulo || titulo.trim() === "" || titulo === "adoleta") {
+    throw new Error("O título do chamado não pode ser vazio.");
+  }
 
-    return true;
+  return true;
 }
 
 export default validarChamado;
